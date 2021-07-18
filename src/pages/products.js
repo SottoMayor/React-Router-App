@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const products = () => {
     return (
@@ -7,13 +8,13 @@ const products = () => {
 
             <ul>
                 <li>
-                    Book
+                    <Link to='Product-details/Book'>Book</Link>
                 </li>
                 <li>
-                    Notebook
+                    <Link to='Product-details/Notebook'>Notebook</Link>
                 </li>
                 <li>
-                    Pen
+                    <Link to='Product-details/Pen'>Pen</Link>
                 </li>
             </ul>
 
