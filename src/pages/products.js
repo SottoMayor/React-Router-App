@@ -8,13 +8,13 @@ const products = () => {
 
             <ul>
                 <li>
-                    <Link to='Product-details/Book'>Book</Link>
+                    <Link to='/products/Book'>Book</Link>
                 </li>
                 <li>
-                    <Link to='Product-details/Notebook'>Notebook</Link>
+                    <Link to='/products/Notebook'>Notebook</Link>
                 </li>
                 <li>
-                    <Link to='Product-details/Pen'>Pen</Link>
+                    <Link to='/products/Pen'>Pen</Link>
                 </li>
             </ul>
 

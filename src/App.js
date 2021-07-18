@@ -1,5 +1,5 @@
 import './App.css';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import ProductDetails from './pages/ProductDetails';
@@ -12,17 +12,20 @@ function App() {
       <MainHeader/>
       
       <main>
-        <Route path='/home'>
-          <Home />
-        </Route>
+        <Switch>
+          <Route path='/home'>
+            <Home />
+          </Route>
 
-        <Route path='/products'>
-          <Products />
-        </Route>
+          
+          <Route path='/products' exact>
+            <Products />
+          </Route>
 
-        <Route path='/product-details/:productId'>
-          <ProductDetails/>
-        </Route>
+          <Route path='/products/:productId'>
+            <ProductDetails/>
+          </Route>
+        </Switch>
       </main>
 
     </div>
