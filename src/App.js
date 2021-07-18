@@ -1,20 +1,24 @@
 import './App.css';
 import { Route } from 'react-router-dom';
-import Home from './pages/home'
-import Products from './pages/products'
+import Home from './pages/Home'
+import Products from './pages/Products'
+import MainHeader from './components/MainHeader/MainHeader';
 
 function App() {
   return (
     <div className="App">
-      <h2 style={{"margin-bottom": "30px", "margin-top": "30px"}} >This will always persists!</h2>
 
-      <Route path='/home'>
-        <Home />
-      </Route>
+      <MainHeader/>
+      
+      <main>
+        <Route path='/home'>
+          <Home />
+        </Route>
 
-      <Route path='/products'>
-        <Products />
-      </Route>
+        <Route path='/products'>
+          <Products />
+        </Route>
+      </main>
 
     </div>
   );
