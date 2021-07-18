@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import ProductDetails from './pages/ProductDetails';
@@ -13,6 +13,11 @@ function App() {
       
       <main>
         <Switch>
+
+          <Route path='/' exact>
+            <Redirect to='/home'/>
+          </Route>
+
           <Route path='/home'>
             <Home />
           </Route>

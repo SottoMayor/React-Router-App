@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { Fragment } from 'react';
+import { Route } from 'react-router-dom';
 
 const home = () => {
     return (
-        <div>
+        <Fragment>
             <h3>This is the <strong>Home</strong> Page!</h3>
-        </div>
+            
+            <Route path='/home/new-user'>
+                <p>Hi, new user!!!!</p>
+            </Route>
+
+        </Fragment>
     )
 }
 
