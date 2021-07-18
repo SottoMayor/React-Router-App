@@ -1,7 +1,8 @@
 import './App.css';
 import { Route } from 'react-router-dom';
-import Home from './pages/Home'
-import Products from './pages/Products'
+import Home from './pages/Home';
+import Products from './pages/Products';
+import ProductDetails from './pages/ProductDetails';
 import MainHeader from './components/MainHeader/MainHeader';
 
 function App() {
@@ -17,6 +18,10 @@ function App() {
 
         <Route path='/products'>
           <Products />
+        </Route>
+
+        <Route path='/product-details/:productId'>
+          <ProductDetails/>
         </Route>
       </main>
 
