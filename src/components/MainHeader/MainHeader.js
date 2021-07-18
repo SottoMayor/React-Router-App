@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import classes from './MainHeader.module.css'
 
 const mainHeader = () => {
@@ -8,10 +7,10 @@ const mainHeader = () => {
             <nav>
                 <ul>
                     <li>
-                        <NavLink activeClassName={classes.active} to="/home">Home</NavLink>
+                        <a href="/home">Home</a>
                     </li>
                     <li>
-                        <NavLink activeClassName={classes.active} to="/products">Products</NavLink>
+                        <a href="/products">Products</a>
                     </li>
                 </ul>
             </nav>
